@@ -146,6 +146,8 @@
       font-size: 1.6rem;
       margin-top: 12px;
       font-weight: 900;
+      opacity: 0;
+      animation: fadeLoop 6s infinite;
     }
     .bubble-card .features {
       font-size: 0.95rem;
@@ -299,6 +301,13 @@
     @keyframes slideInPopup {
       from { opacity: 0; transform: translateY(100px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeLoop {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
     }
 
     /* iPhone Optimization */
