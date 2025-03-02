@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>austinwrap | Your Web Vision Unleashed</title>
+  <title>austinwrap | Unleash Your Web Vision</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     /* Reset & Core Styling */
@@ -13,8 +13,8 @@
     }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(145deg, #0f0f1a, #1e2a44);
-      color: #e0e0e0;
+      background: linear-gradient(145deg, #0a0a14, #162038);
+      color: #e6e6e6;
       line-height: 1.8;
       overflow-x: hidden;
       position: relative;
@@ -22,32 +22,32 @@
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 15px;
+      padding: 0 20px;
     }
 
     /* Header Styling */
     header {
       text-align: center;
-      padding: 80px 15px;
+      padding: 100px 20px;
       position: relative;
       overflow: hidden;
     }
     header h1 {
-      font-size: 4rem;
+      font-size: 4.5rem;
       font-weight: 900;
-      letter-spacing: 2px;
-      background: linear-gradient(90deg, #00eaff, #ff1a8c);
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #00f2ff, #ff007a);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
       animation: glow 3s infinite alternate;
-      text-shadow: 0 0 15px rgba(0, 234, 255, 0.5);
+      text-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
     }
     header p {
-      font-size: 1.4rem;
-      color: #c0c0c0;
-      max-width: 550px;
-      margin: 20px auto;
+      font-size: 1.5rem;
+      color: #d0d0d0;
+      max-width: 600px;
+      margin: 25px auto;
       opacity: 0;
       animation: fadeInUp 1s ease forwards 0.5s;
     }
@@ -60,95 +60,95 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.4);
     }
 
     /* Landing Button */
     .btn {
       display: inline-flex;
       align-items: center;
-      background: linear-gradient(135deg, #00eaff, #ff1a8c);
+      background: linear-gradient(135deg, #00f2ff, #ff007a);
       color: #fff;
-      padding: 18px 35px;
-      margin: 25px 10px;
+      padding: 20px 40px;
+      margin: 30px 10px;
       border: none;
       border-radius: 50px;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 700;
       text-transform: uppercase;
       cursor: pointer;
       transition: all 0.4s ease;
-      box-shadow: 0 5px 20px rgba(0, 234, 255, 0.5);
+      box-shadow: 0 6px 25px rgba(0, 242, 255, 0.6);
     }
     .btn:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0, 234, 255, 0.7);
+      box-shadow: 0 15px 35px rgba(0, 242, 255, 0.8);
     }
     .btn::before {
       content: "\f005";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      margin-right: 10px;
+      margin-right: 12px;
     }
 
     /* Back Button */
     .back-btn {
       display: inline-block;
-      background: linear-gradient(135deg, #ff1a8c, #00eaff);
+      background: linear-gradient(135deg, #ff007a, #00f2ff);
       color: #fff;
-      padding: 12px 25px;
-      margin: 20px 0;
+      padding: 14px 30px;
+      margin: 25px 0;
       border-radius: 50px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.4s ease;
-      box-shadow: 0 5px 15px rgba(0, 234, 255, 0.4);
+      box-shadow: 0 5px 15px rgba(0, 242, 255, 0.4);
     }
     .back-btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 234, 255, 0.6);
+      box-shadow: 0 10px 25px rgba(0, 242, 255, 0.6);
     }
 
-    /* Rectangular Cards */
-    .bubble-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      padding: 30px 0;
-      justify-items: center;
+    /* Pyramid Cards */
+    .pyramid-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 40px 0;
     }
     .bubble-card {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      background: linear-gradient(135deg, #00eaff, #ff1a8c);
+      background: linear-gradient(135deg, #00f2ff, #ff007a);
       color: #fff;
-      border-radius: 20px;
+      border-radius: 25px;
       text-align: center;
-      padding: 20px;
-      font-size: 1.1rem;
+      padding: 25px;
+      font-size: 1.2rem;
       font-weight: 700;
       text-transform: uppercase;
       cursor: pointer;
       transition: all 0.4s ease;
-      box-shadow: 0 5px 20px rgba(0, 234, 255, 0.4);
+      box-shadow: 0 6px 25px rgba(0, 242, 255, 0.5);
       text-decoration: none;
       position: relative;
       overflow: hidden;
     }
     .bubble-card:hover {
       transform: scale(1.05);
-      box-shadow: 0 15px 30px rgba(0, 234, 255, 0.7);
+      box-shadow: 0 15px 35px rgba(0, 242, 255, 0.7);
     }
     .bubble-card span {
-      font-size: 1.5rem;
-      margin-top: 10px;
+      font-size: 1.6rem;
+      margin-top: 12px;
       font-weight: 900;
     }
     .bubble-card .features {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 400;
       text-transform: none;
       margin-top: 15px;
@@ -159,90 +159,90 @@
       padding: 0;
     }
     .bubble-card .features li {
-      margin: 5px 0;
+      margin: 6px 0;
     }
-    /* Size Scaling by Price */
+    /* Pyramid Sizes */
     .bubble-card.tier-0 { width: 280px; height: 220px; }
-    .bubble-card.tier-50 { width: 300px; height: 260px; }
-    .bubble-card.tier-99 { width: 320px; height: 300px; }
-    .bubble-card.tier-200 { width: 340px; height: 340px; }
-    .bubble-card.tier-500 { width: 360px; height: 400px; }
+    .bubble-card.tier-50 { width: 340px; height: 260px; }
+    .bubble-card.tier-99 { width: 400px; height: 300px; }
+    .bubble-card.tier-200 { width: 460px; height: 340px; }
+    .bubble-card.tier-500 { width: 520px; height: 400px; }
 
     /* Form Styling */
     form {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 35px;
-      border-radius: 15px;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(12px);
-      max-width: 650px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(15px);
+      max-width: 700px;
       margin: 0 auto;
     }
     form label {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 700;
-      color: #00eaff;
-      margin-bottom: 10px;
+      color: #00f2ff;
+      margin-bottom: 12px;
       display: block;
     }
     form input, form textarea {
       width: 100%;
-      padding: 14px;
-      margin-bottom: 20px;
-      border: 2px solid rgba(255, 255, 255, 0.15);
-      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 25px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
       background: rgba(255, 255, 255, 0.05);
       color: #fff;
-      font-size: 1rem;
+      font-size: 1.1rem;
       transition: border 0.3s ease, box-shadow 0.3s ease;
     }
     form input:focus, form textarea:focus {
-      border-color: #ff1a8c;
-      box-shadow: 0 0 10px rgba(255, 26, 140, 0.5);
+      border-color: #ff007a;
+      box-shadow: 0 0 12px rgba(255, 0, 122, 0.6);
       outline: none;
     }
     form textarea {
       resize: vertical;
-      max-height: 300px;
+      max-height: 320px;
     }
     form button {
       width: 100%;
-      padding: 18px;
+      padding: 20px;
       border: none;
       border-radius: 50px;
-      background: linear-gradient(135deg, #28a745, #00eaff);
+      background: linear-gradient(135deg, #28a745, #00f2ff);
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.4s ease;
-      box-shadow: 0 5px 20px rgba(40, 167, 69, 0.5);
+      box-shadow: 0 6px 25px rgba(40, 167, 69, 0.6);
     }
     form button:hover {
-      background: linear-gradient(135deg, #1e7e34, #00ccff);
+      background: linear-gradient(135deg, #1e7e34, #00d4ff);
       transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(40, 167, 69, 0.7);
+      box-shadow: 0 15px 35px rgba(40, 167, 69, 0.8);
     }
     form button::before {
       content: "\f005";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      margin-right: 10px;
+      margin-right: 12px;
     }
 
     /* Popup Styling */
     .popup {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: linear-gradient(135deg, #ff1a8c, #00eaff);
+      bottom: 25px;
+      right: 25px;
+      background: linear-gradient(135deg, #ff007a, #00f2ff);
       color: #fff;
-      padding: 15px 20px;
-      border-radius: 15px;
-      font-size: 0.9rem;
+      padding: 18px 25px;
+      border-radius: 20px;
+      font-size: 1rem;
       font-weight: 600;
-      max-width: 300px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      max-width: 320px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
       z-index: 100;
       animation: slideInPopup 0.5s ease forwards;
       display: flex;
@@ -253,21 +253,21 @@
       content: "\f0a1";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      margin-right: 10px;
+      margin-right: 12px;
     }
     .popup .close-btn {
       background: none;
       border: none;
       color: #fff;
-      font-size: 1rem;
+      font-size: 1.1rem;
       cursor: pointer;
-      margin-left: 10px;
+      margin-left: 12px;
     }
 
     /* Section Styling */
     .section {
       display: none;
-      padding: 60px 0;
+      padding: 80px 0;
       animation: slideIn 0.8s ease forwards;
     }
     .active {
@@ -277,16 +277,16 @@
     /* Footer */
     footer {
       text-align: center;
-      padding: 40px 0;
-      font-size: 1rem;
-      color: #999;
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 50px 0;
+      font-size: 1.1rem;
+      color: #a0a0a0;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     /* Animations */
     @keyframes glow {
-      0% { text-shadow: 0 0 15px #00eaff; }
-      100% { text-shadow: 0 0 25px #ff1a8c; }
+      0% { text-shadow: 0 0 15px #00f2ff; }
+      100% { text-shadow: 0 0 25px #ff007a; }
     }
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
@@ -303,40 +303,40 @@
 
     /* iPhone Optimization */
     @media (max-width: 768px) {
-      header { padding: 50px 10px; }
-      header h1 { font-size: 3rem; }
-      header p { font-size: 1.1rem; max-width: 90%; }
-      .btn { padding: 14px 28px; font-size: 1rem; }
-      .bubble-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-      .bubble-card { font-size: 1rem; }
+      header { padding: 60px 15px; }
+      header h1 { font-size: 3.5rem; }
+      header p { font-size: 1.2rem; max-width: 90%; }
+      .btn { padding: 16px 32px; font-size: 1.1rem; }
+      .pyramid-grid { gap: 15px; }
+      .bubble-card { font-size: 1rem; padding: 20px; }
       .bubble-card.tier-0 { width: 250px; height: 200px; }
-      .bubble-card.tier-50 { width: 270px; height: 240px; }
-      .bubble-card.tier-99 { width: 290px; height: 280px; }
-      .bubble-card.tier-200 { width: 310px; height: 320px; }
-      .bubble-card.tier-500 { width: 330px; height: 360px; }
-      .bubble-card .features { font-size: 0.85rem; }
-      form { padding: 25px; max-width: 100%; }
-      form input, form textarea { font-size: 0.95rem; padding: 12px; }
-      form button { font-size: 1.1rem; padding: 14px; }
-      footer { font-size: 0.9rem; padding: 30px 0; }
-      .popup { max-width: 250px; font-size: 0.85rem; }
+      .bubble-card.tier-50 { width: 300px; height: 240px; }
+      .bubble-card.tier-99 { width: 350px; height: 280px; }
+      .bubble-card.tier-200 { width: 400px; height: 320px; }
+      .bubble-card.tier-500 { width: 450px; height: 360px; }
+      .bubble-card .features { font-size: 0.9rem; }
+      form { padding: 30px; max-width: 100%; }
+      form input, form textarea { font-size: 1rem; padding: 14px; }
+      form button { font-size: 1.2rem; padding: 16px; }
+      footer { font-size: 1rem; padding: 40px 0; }
+      .popup { max-width: 280px; font-size: 0.9rem; }
     }
     @media (max-width: 375px) {
-      header h1 { font-size: 2.2rem; }
-      header p { font-size: 0.95rem; }
-      .btn { padding: 12px 24px; font-size: 0.9rem; }
-      .bubble-grid { grid-template-columns: 1fr; gap: 15px; }
-      .bubble-card { width: 100%; font-size: 0.9rem; }
+      header h1 { font-size: 2.5rem; }
+      header p { font-size: 1rem; }
+      .btn { padding: 14px 28px; font-size: 1rem; }
+      .pyramid-grid { gap: 12px; }
+      .bubble-card { width: 100% !important; font-size: 0.9rem; padding: 15px; }
       .bubble-card.tier-0 { height: 180px; }
       .bubble-card.tier-50 { height: 220px; }
       .bubble-card.tier-99 { height: 260px; }
       .bubble-card.tier-200 { height: 300px; }
       .bubble-card.tier-500 { height: 340px; }
-      .bubble-card .features { font-size: 0.8rem; }
-      form { padding: 20px; }
-      form input, form textarea { padding: 10px; }
-      form button { padding: 12px; font-size: 1rem; }
-      .popup { bottom: 15px; right: 15px; padding: 10px 15px; }
+      .bubble-card .features { font-size: 0.85rem; }
+      form { padding: 25px; }
+      form input, form textarea { padding: 12px; }
+      form button { padding: 14px; font-size: 1.1rem; }
+      .popup { bottom: 20px; right: 20px; padding: 12px 20px; max-width: 250px; }
     }
   </style>
 </head>
@@ -357,9 +357,9 @@
       <a href="#" class="back-btn" id="packages-back">Back to Home</a>
       <header>
         <h1>Your Options</h1>
-        <p>Get a custom email packet tailored to your website idea.</p>
+        <p>Get a custom email packet tailored to your website vision.</p>
       </header>
-      <div class="bubble-grid">
+      <div class="pyramid-grid">
         <a href="#consultation?package=Quick Start Guide" class="bubble-card tier-0">
           Quick Start Guide <span>$0</span>
           <div class="features">
@@ -425,7 +425,7 @@
         <h1>Tell Us Your Vision</h1>
         <p>Describe your website idea in 1000 words or less—be creative! We’ll send you a custom email packet.</p>
       </header>
-      <form id="contactForm" action="mailto:aytmout@gmail.com" method="post" enctype="text/plain">
+      <form id="contactForm">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your full name" required />
 
@@ -458,7 +458,7 @@
     </div>
 
     <footer>
-      <p>© 2025 austinwrap. Forged in brilliance. All rights reserved.</p>
+      <p>© 2025 austinwrap. Crafted with brilliance. All rights reserved.</p>
     </footer>
   </div>
 
@@ -471,6 +471,7 @@
     const packageInput = document.getElementById('package');
     const venmoInput = document.getElementById('venmo');
     const venmoLabel = document.getElementById('venmo-label');
+    const contactForm = document.getElementById('contactForm');
 
     document.getElementById('enterBtn').addEventListener('click', function () {
       landing.style.display = 'none';
@@ -515,6 +516,40 @@
       });
     });
 
+    // Form Submission - Generate Drafted Email
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value || 'Not provided';
+      const venmo = packageInput.value === 'Quick Start Guide' ? 'Not applicable' : document.getElementById('venmo').value;
+      const package = packageInput.value;
+      const website = document.getElementById('website').value || 'Not provided';
+      const details = document.getElementById('details').value;
+
+      const subject = `Website Idea Submission - ${name}`;
+      const body = `
+austinwrap Website Idea Submission
+=====================================
+
+**Name:** ${name}
+**Email:** ${email}
+**Phone Number:** ${phone}
+**Venmo (Username or Link):** ${venmo}
+**Selected Package:** ${package}
+**Desired Website Name:** ${website}
+
+**Website Idea (1000 words or less):**
+${details}
+
+=====================================
+Thank you for choosing austinwrap! We'll craft your custom email packet based on this info.
+      `.trim();
+
+      const mailtoLink = `mailto:aytmout@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    });
+
     // Popup Handling
     const popup = document.getElementById('popup');
     const closePopup = document.getElementById('close-popup');
@@ -528,18 +563,18 @@
     // Particles Background
     particlesJS('particles', {
       particles: {
-        number: { value: 60, density: { enable: true, value_area: 800 } },
-        color: { value: '#00eaff' },
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#00f2ff' },
         shape: { type: 'circle' },
-        opacity: { value: 0.6, random: true },
-        size: { value: 4, random: true },
-        line_linked: { enable: true, distance: 130, color: '#ff1a8c', opacity: 0.5, width: 1.5 },
-        move: { enable: true, speed: 3, direction: 'none', random: false, straight: false, out_mode: 'out' }
+        opacity: { value: 0.7, random: true },
+        size: { value: 5, random: true },
+        line_linked: { enable: true, distance: 140, color: '#ff007a', opacity: 0.6, width: 1.8 },
+        move: { enable: true, speed: 4, direction: 'none', random: false, straight: false, out_mode: 'out' }
       },
       interactivity: {
         detect_on: 'canvas',
         events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
-        modes: { repulse: { distance: 80, duration: 0.4 }, push: { particles_nb: 4 } }
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
       },
       retina_detect: true
     });
